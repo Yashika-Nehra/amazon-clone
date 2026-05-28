@@ -26,7 +26,7 @@ export default function ProductCard({ product, addToCart }) {
         </span>
       )}
       <Link to={`/product/${product.id}`} className="pcard__img-wrap">
-        <div className="pcard__img">{product.emoji}</div>
+        <div className="pcard__img"><img src={product.image} alt={product.title} className="pcard__img" /></div>
       </Link>
       <div className="pcard__body">
         <Link to={`/product/${product.id}`} className="pcard__title">
