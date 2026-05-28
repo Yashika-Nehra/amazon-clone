@@ -112,7 +112,9 @@ If I continue working on this project, I would like to add:
 
 ## Developer
 
-Name: Yashika Nehra
-Branch: B.Tech Computer Science Engineering
-Year: 1st Year
-GitHub: https://github.com/Yashika-Nehra
+## Developer
+
+**Name:** Yashika Nehra
+**Branch:** B.Tech Computer Science Engineering
+**Year:** 1st Year
+**GitHub:** https://github.com/Yashika-Nehra
