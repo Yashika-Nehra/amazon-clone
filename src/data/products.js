@@ -1,7 +1,28 @@
+import phone from '../assets/images/phone.png';
+import headphone from '../assets/images/headphone.jpg';
+import watch from '../assets/images/watch.jpg';
+import laptop from '../assets/images/laptop.jpg';
+import books from '../assets/images/books.jpg';
+import camera from '../assets/images/camera.jpg';
+import bagpack from '../assets/images/bagpack.jpg';
+import chair from '../assets/images/chair.jpg';
+import controller from '../assets/images/controller.png';
+import cookware from '../assets/images/cookware.jpg';
+import printer from '../assets/images/printer.jpg';
+import tv from '../assets/images/tv.jpg';
+import decor from '../assets/images/decor.jpg';
+import appliances from '../assets/images/appliances.jpg';
+import menswear from '../assets/images/menwear.jpg';
+import footwear from '../assets/images/footwear.jpg';
+import handbags from '../assets/images/handbags.jpg';
+import sunglasses from '../assets/images/sunglasses.jpg';
+import notebooks from '../assets/images/notebooks.jpg';
+import pens from '../assets/images/pens.jpg';
+import art_supplies from '../assets/images/art_supplies.jpg';
 export const products = [
   {
     id: 1,
-    emoji: '📱',
+    image: phone,
     title: 'Samsung Galaxy A55 5G (128GB, Awesome Iceblue)',
     category: 'Electronics',
     price: 24999,
@@ -15,7 +36,7 @@ export const products = [
   },
   {
     id: 2,
-    emoji: '🎧',
+    image: headphone,
     title: 'boAt Rockerz 450 Bluetooth Wireless Headphone',
     category: 'Electronics',
     price: 1299,
@@ -29,7 +50,7 @@ export const products = [
   },
   {
     id: 3,
-    emoji: '⌚',
+    image: watch,
     title: 'Noise ColorFit Pro 5 Smart Watch with Bluetooth Calling',
     category: 'Electronics',
     price: 3499,
@@ -43,7 +64,7 @@ export const products = [
   },
   {
     id: 4,
-    emoji: '💻',
+    image: laptop,
     title: 'Lenovo IdeaPad Slim 3 Intel Core i5 12th Gen Laptop',
     category: 'Computers',
     price: 42990,
@@ -57,7 +78,7 @@ export const products = [
   },
   {
     id: 5,
-    emoji: '📸',
+    image: camera,
     title: 'Canon EOS 1500D 24.1MP DSLR Camera with 18-55mm Lens',
     category: 'Camera',
     price: 34990,
@@ -71,7 +92,7 @@ export const products = [
   },
   {
     id: 6,
-    emoji: '🖨️',
+    image: printer,
     title: 'HP DeskJet 2331 All-in-One Colour Printer',
     category: 'Computers',
     price: 2699,
@@ -85,7 +106,7 @@ export const products = [
   },
   {
     id: 7,
-    emoji: '🎮',
+    image: controller,
     title: 'Sony DualSense Wireless Controller for PS5',
     category: 'Gaming',
     price: 5499,
@@ -99,7 +120,7 @@ export const products = [
   },
   {
     id: 8,
-    emoji: '📺',
+    image: tv,
     title: 'MI 108cm (43 inch) 4K Ultra HD Smart Android TV',
     category: 'Electronics',
     price: 26999,
@@ -113,7 +134,7 @@ export const products = [
   },
   {
     id: 9,
-    emoji: '🎒',
+    image: bagpack,
     title: 'Safari Polyester 55 cms Cabin Backpack',
     category: 'Bags',
     price: 899,
@@ -127,7 +148,7 @@ export const products = [
   },
   {
     id: 10,
-    emoji: '🍳',
+    image: cookware,
     title: 'Prestige Omega Select Plus Non-Stick Kadai 2.5L',
     category: 'Kitchen',
     price: 799,
@@ -141,7 +162,7 @@ export const products = [
   },
   {
     id: 11,
-    emoji: '📚',
+    image: books,
     title: 'Atomic Habits by James Clear — Paperback',
     category: 'Books',
     price: 349,
@@ -155,7 +176,7 @@ export const products = [
   },
   {
     id: 12,
-    emoji: '🪑',
+    image: chair,
     title: 'Green Soul Monster Series High Back Ergonomic Chair',
     category: 'Furniture',
     price: 12999,
@@ -173,37 +194,37 @@ export const categories = [
   {
     title: 'Top Deals in Electronics',
     items: [
-      { label: 'Smartphones', emoji: '📱' },
-      { label: 'Laptops', emoji: '💻' },
-      { label: 'Headphones', emoji: '🎧' },
-      { label: 'Smart TVs', emoji: '📺' },
+      { label: 'Smartphones', image: phone },
+      { label: 'Laptops', image: laptop },
+      { label: 'Headphones', image: headphone },
+      { label: 'Smart TVs', image: tv },
     ],
   },
   {
     title: 'Home & Kitchen',
     items: [
-      { label: 'Cookware', emoji: '🍳' },
-      { label: 'Furniture', emoji: '🪑' },
-      { label: 'Décor', emoji: '🏮' },
-      { label: 'Appliances', emoji: '🧹' },
+      { label: 'Cookware', image: cookware },
+      { label: 'Furniture', image: chair },
+      { label: 'Décor', image: decor },
+      { label: 'Appliances', image: appliances },
     ],
   },
   {
     title: 'Fashion Trending',
     items: [
-      { label: 'Men\'s Wear', emoji: '👕' },
-      { label: 'Footwear', emoji: '👟' },
-      { label: 'Handbags', emoji: '👜' },
-      { label: 'Sunglasses', emoji: '🕶️' },
+      { label: 'Men\'s Wear', image: menswear },
+      { label: 'Footwear', image: footwear },
+      { label: 'Handbags', image: handbags },
+      { label: 'Sunglasses', image: sunglasses },
     ],
   },
   {
     title: 'Books & Stationery',
     items: [
-      { label: 'Bestsellers', emoji: '📚' },
-      { label: 'Notebooks', emoji: '📓' },
-      { label: 'Pens', emoji: '✏️' },
-      { label: 'Art Supplies', emoji: '🎨' },
+      { label: 'Bestsellers', image: books },
+      { label: 'Notebooks', image: notebooks },
+      { label: 'Pens', image: pens },
+      { label: 'Art Supplies', image: art_supplies },
     ],
   },
 ];
