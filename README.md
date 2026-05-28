@@ -85,12 +85,6 @@ src/
 
 ---
 
-## Screenshots
-
-(Add screenshots of your project here)
-
----
-
 ## Future Improvements
 
 If I continue working on this project, I would like to add:
