@@ -112,8 +112,6 @@ If I continue working on this project, I would like to add:
 
 ## Developer
 
-## Developer
-
 **Name:** Yashika Nehra
 
 **Branch:** B.Tech Computer Science Engineering
