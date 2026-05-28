@@ -1,0 +1,106 @@
+/* ===== GLOBAL RESET & VARIABLES ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --amazon-dark:     #131921;
+  --amazon-mid:      #232F3E;
+  --amazon-light:    #37475A;
+  --amazon-orange:   #FF9900;
+  --amazon-yellow:   #FFD814;
+  --amazon-btn-bg:   #FFD814;
+  --amazon-btn-border: #FCD200;
+  --amazon-link:     #007185;
+  --amazon-link-hover: #C7511F;
+  --amazon-red:      #B12704;
+  --amazon-green:    #007600;
+  --amazon-prime:    #00A8E1;
+  --amazon-bg:       #EAEDED;
+  --amazon-white:    #FFFFFF;
+  --text-primary:    #0F1111;
+  --text-secondary:  #565959;
+  --border-color:    #DDD;
+  --card-shadow:     0 2px 5px rgba(15,17,17,.15);
+  --font-main:       'Amazon Ember', Arial, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-main);
+  background: var(--amazon-bg);
+  color: var(--text-primary);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-main);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul { list-style: none; }
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #888; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #555; }
+
+/* ===== UTILITY ===== */
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.btn-primary {
+  background: var(--amazon-yellow);
+  border: 1px solid var(--amazon-btn-border);
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: background 0.15s;
+}
+.btn-primary:hover { background: #F7CA00; }
+
+.btn-orange {
+  background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+  border: 1px solid #a88734;
+  border-radius: 3px;
+  padding: 8px 16px;
+  font-size: 13px;
+}
+.btn-orange:hover { background: linear-gradient(to bottom, #f5d78e, #eeb933); }
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -1000px 0; }
+  100% { background-position: 1000px 0; }
+}
+
+.fade-in { animation: fadeIn 0.3s ease forwards; }

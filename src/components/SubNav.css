@@ -1,0 +1,27 @@
+.subnav {
+  background: var(--amazon-mid);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0 16px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  white-space: nowrap;
+  height: 38px;
+}
+.subnav::-webkit-scrollbar { display: none; }
+
+.subnav__link {
+  color: white;
+  font-size: 13px;
+  padding: 0 10px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  flex-shrink: 0;
+  transition: border-color 0.15s;
+}
+.subnav__link:hover { border-color: white; }
